@@ -15,6 +15,6 @@ while(True):
             Temp += j
     if Temp > Max:
         Max = Temp
-        Temp = 0
+    Temp = 0
     count += 1
 print(Max)
