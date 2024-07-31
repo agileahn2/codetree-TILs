@@ -15,6 +15,7 @@ for i in range(n):
             count = 0
         if count == m:
             answer += 1
+            count = 0
             break
 
 for j in range(n):
@@ -27,6 +28,7 @@ for j in range(n):
             count = 0
         if count == m:
             answer += 1
+            count = 0
             break
 if n == 1:
     if m == 0:
