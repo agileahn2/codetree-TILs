@@ -28,5 +28,10 @@ for j in range(n):
         if count == m:
             answer += 1
             break
-
-print(answer)
+if n == 1:
+    if m == 0:
+        print(2)
+    else:
+        print(0)
+else:
+    print(answer)
