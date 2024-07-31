@@ -18,6 +18,7 @@ for i in range(n):
             break
 
 for j in range(n):
+    temp = grid[0][j]
     for i in range(1, n):
         grid[i][j]
         if grid[i][j] == temp:
