@@ -30,10 +30,5 @@ for j in range(n):
             answer += 1
             count = 0
             break
-if n == 1:
-    if m == 0:
-        print(2)
-    else:
-        print(0)
-else:
-    print(answer)
+
+print(answer)
