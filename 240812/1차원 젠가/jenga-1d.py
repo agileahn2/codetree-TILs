@@ -23,4 +23,4 @@ for s, e in delete:
 print(int(len(arr)/2))
 #남은 젠가 출력
 for i in range(0, len(arr), 2):
-    print(int(arr[i])*10 + int(arr[i+1]))
+    print(int(arr[i]+"0") + int(arr[i+1]))
