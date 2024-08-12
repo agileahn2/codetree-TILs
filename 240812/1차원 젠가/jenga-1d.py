@@ -12,7 +12,7 @@ def oneToTow(x):
 #문자열로 입력받기
 arr = ""
 for _ in range(n):
-    arr += oneToTow(input())
+    arr += oneToTow(stdin.readline().strip())
 
 
 delete = [list(map(int, stdin.readline().split())) for _ in range(2)]   # 삭제할 인덱스 2개
@@ -22,7 +22,8 @@ for s, e in delete:
     arr = arr[:s*3-3] + arr[e*3:]
 
 #개수 출력
-print(int(len(arr)/3))
+stdout.write(str(int(len(arr)/3))+"\n")
+
 #남은 젠가 출력
 for i in range(0, len(arr), 3):
-    print(int(arr[i]+arr[i+1]+arr[i+2]))
+    stdout.write(str(int(arr[i]+arr[i+1]+arr[i+2]))+"\n")
