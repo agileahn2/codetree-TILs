@@ -5,7 +5,7 @@ arr = [int(stdin.readline()) for _ in range(n)]
 
 delete = [list(map(int, stdin.readline().split())) for _ in range(2)]   # 삭제할 인덱스 2개
 
-#파이썬의 문자열 슬라이싱 활용
+#파이썬의 슬라이싱 활용
 for s, e in delete:
     arr = arr[:s-1] + arr[e:]
 
