@@ -1,7 +1,7 @@
 from sys import stdin, stdout
 n = int(stdin.readline()) #6
 
-def oneToTow(x):
+def attachZ(x):
     if len(x) == 1:
         return "00"+x
     elif len(x) == 2:
@@ -12,7 +12,7 @@ def oneToTow(x):
 #문자열로 입력받기
 arr = ""
 for _ in range(n):
-    arr += oneToTow(stdin.readline().strip())
+    arr += attachZ(stdin.readline().strip())
 
 
 delete = [list(map(int, stdin.readline().split())) for _ in range(2)]   # 삭제할 인덱스 2개
