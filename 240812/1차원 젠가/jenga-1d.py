@@ -1,29 +1,17 @@
 from sys import stdin, stdout
 n = int(stdin.readline()) #6
 
-def attachZ(x):
-    if len(x) == 1:
-        return "00"+x
-    elif len(x) == 2:
-        return "0"+x
-    else:
-        return x
-
-#문자열로 입력받기
-arr = ""
-for _ in range(n):
-    arr += attachZ(stdin.readline().strip())
-
+arr = [int(stdin.readline()) for _ in range(n)]
 
 delete = [list(map(int, stdin.readline().split())) for _ in range(2)]   # 삭제할 인덱스 2개
 
 #파이썬의 문자열 슬라이싱 활용
 for s, e in delete:
-    arr = arr[:s*3-3] + arr[e*3:]
+    arr = arr[:s-1] + arr[e:]
 
 #개수 출력
-stdout.write(str(int(len(arr)/3))+"\n")
+stdout.write(str(len(arr))+"\n")
 
 #남은 젠가 출력
-for i in range(0, len(arr), 3):
-    stdout.write(str(int(arr[i]+arr[i+1]+arr[i+2]))+"\n")
+for i in arr:
+    stdout.write(str(i)+"\n")
