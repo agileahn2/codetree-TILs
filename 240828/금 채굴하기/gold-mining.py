@@ -26,7 +26,7 @@ for L in range(n - n%2 + 1): #
             g_n = mine(L, j, i, n, g)
             m_g = g_n * m
             K_R = K_Cal(L)
-            if K_R < m_g and Max < g_n:
+            if K_R <= m_g and Max < g_n:
                 Max = g_n
 
 print(Max)
