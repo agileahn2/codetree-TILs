@@ -20,7 +20,7 @@ g_n = 0 #gold num
 m_g = 0 #g_n * m
 K_R = 0 #rejult
 
-for L in range(n - n%2): #
+for L in range(n - n%2 + 1): #
     for i in range(n - int(L /2)):
         for j in range(n - int(L/2)):
             g_n = mine(L, j, i, n, g)
