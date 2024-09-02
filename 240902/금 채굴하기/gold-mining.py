@@ -20,9 +20,10 @@ g_n = 0 #gold num
 m_g = 0 #g_n * m
 K_R = 0 #result
 
-for L in range(n): #
-    for i in range(n - int(L /2)):
-        for j in range(n - int(L/2)):
+for L in range(n - n%2 + 1):
+    s = int(L/2) #start
+    for i in range(s, n - s + 1):
+        for j in range(s, n - s + 1):
             g_n = mine(L, j, i, n, g)
             m_g = g_n * m
             K_R = K_Cal(L)
